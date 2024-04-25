@@ -20,3 +20,12 @@ resource "aws_instance" "based_server" {
     Name = "github-runner"
   }
 }
+
+resource "aws_instance" "based_server_2" {
+  ami           = "ami-09b90e09742640522"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "BasedServe"
+  }
+}
